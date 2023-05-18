@@ -98,9 +98,9 @@
 	<h1>Formulário de Cadastro</h1>
 	<form id="cadastro-form" action="">
 		<label for="nome">Nome:</label>
-		<input type="text" id="nome" name="nome" placeholder="Nome" required>
+		<input type="text" id="nome" name="nome" placeholder="Nome" class="required" required>
         <label for="nome">Sobrenome:</label>
-		<input type="text" id="nome" name="nome" placeholder="Sobrenome" required>
+		<input type="text" id="nome" name="nome" placeholder="Sobrenome" class="required" required>
 		
 		<label for="email">Email:</label>
 		<input type="email" id="email" name="email" placeholder="Digite um e-mail válido" required>
@@ -140,7 +140,7 @@
         }
         document.getElementById("fechar-modal").addEventListener("click", function() {
         document.getElementById("modal").style.display = "none";
-        });
+        });        
 
         
       </script>
