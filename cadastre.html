@@ -98,13 +98,21 @@
 	<h1>Formulário de Cadastro</h1>
 	<form id="cadastro-form" action="">
 		<label for="nome">Nome:</label>
-		<input type="text" id="nome" name="nome" required>
+		<input type="text" id="nome" name="nome" placeholder="Nome" required>
+        <label for="nome">Sobrenome:</label>
+		<input type="text" id="nome" name="nome" placeholder="Sobrenome" required>
 		
 		<label for="email">Email:</label>
-		<input type="email" id="email" name="email" required>
+		<input type="email" id="email" name="email" placeholder="Digite um e-mail válido" required>
+        <label for="email">Repetir Email:</label>
+		<input type="email" id="email" name="email" placeholder="Digite o e-mail novamente" required >
+        <label for="email">Crie uma nova senha:</label>
+		<input type="email" id="email" name="email" placeholder="Digite uma senha" required>
+        <label for="email">Repetir senha:</label>
+		<input type="email" id="email" name="email" placeholder="Digite a senha novamente" required >
 		
 		<label for="telefone">Telefone:</label>
-		<input type="text" id="telefone" name="telefone">
+		<input type="text" id="telefone" name="telefone" placeholder="Telefone">
 		
 		<input type="submit" value="Cadastrar" onclick="exibirModal(event)">
 	</form>
