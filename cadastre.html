@@ -16,6 +16,9 @@
 		<!-- Estilo customizado -->
 		<link rel="stylesheet" type="text/css" href="css/estilo.css">
 	<style>
+		p{
+			color: black;
+		}
 		body {
 			background-color: #4b0082;
 			color: #fff;
@@ -162,6 +165,67 @@
 		
 		<label for="telefone">Telefone:</label>
 		<input type="text" id="telefone" name="telefone" placeholder="Telefone">
+		<p>Quantas pessoas moram na sua casa?</p>
+		<label><input type="radio" name="quantidade-pessoas" value="Menos de 3 pessoas"> Menos de 3 pessoas</label><br>
+		<label><input type="radio" name="quantidade-pessoas" value="Entre 3 e 5 pessoas"> Entre 3 e 5 pessoas</label><br>
+		<label><input type="radio" name="quantidade-pessoas" value="Entre 6 e 8 pessoas"> Entre 6 e 8 pessoas</label><br>
+		<label><input type="radio" name="quantidade-pessoas" value="Mais de 8 pessoas"> Mais de 8 pessoas</label><br>
+	
+		<p>Você mora em casa própria?</p>
+		<label><input type="radio" name="casa-propria" value="Sim, completamente quitada"> Sim, completamente quitada</label><br>
+		<label><input type="radio" name="casa-propria" value="Sim, mas ainda estou pagando"> Sim, mas ainda estou pagando</label><br>
+		<label><input type="radio" name="casa-propria" value="Não, moro em casa alugada"> Não, moro em casa alugada</label><br>
+		<label><input type="radio" name="casa-propria" value="Não, moro com familiares ou em outra situação"> Não, moro com familiares ou em outra situação</label><br>
+	
+		<p>Em qual faixa está a renda familiar mensal?</p>
+		<label><input type="radio" name="renda-familiar" value="Menos de R$ 1.000,00"> Menos de R$ 1.000,00</label><br>
+		<label><input type="radio" name="renda-familiar" value="Entre R$ 1.000,00 e R$ 3.000,00"> Entre R$ 1.000,00 e R$ 3.000,00</label><br>
+		<label><input type="radio" name="renda-familiar" value="Entre R$ 3.000,00 e R$ 6.000,00"> Entre R$ 3.000,00 e R$ 6.000,00</label><br>
+		<label><input type="radio" name="renda-familiar" value="Mais de R$ 6.000,00"> Mais de R$ 6.000,00</label><br>
+	
+		<p>Você já presenciou algum desastre natural na sua região?</p>
+		<label><input type="radio" name="presenciou-desastre" value="Sim, já presenciei enchentes"> Sim, já presenciei enchentes</label><br>
+		<label><input type="radio" name="presenciou-desastre" value="Sim, já presenciei deslizamentos de terra"> Sim, já presenciei deslizamentos de terra</label><br>
+		<label><input type="radio" name="presenciou-desastre" value="Sim, já presenciei incêndios florestais"> Sim, já presenciei incêndios florestais</label><br>
+		<label><input type="radio" name="presenciou-desastre" value="Não, nunca presenciei nenhum desses desastres"> Não, nunca presenciei nenhum desses desastres</label><br>
+	
+		<p>Você possui algum conhecimento sobre medidas preventivas para desastres naturais?</p>
+		<label><input type="radio" name="conhecimento-preventivas" value="Sim, tenho conhecimento e aplico em minha casa"> Sim, tenho conhecimento e aplico em minha casa</label><br>
+		<label><input type="radio" name="conhecimento-preventivas" value="Sim, tenho conhecimento, mas não aplico em minha casa"> Sim, tenho conhecimento, mas não aplico em minha casa</label><br>
+		<label><input type="radio" name="conhecimento-preventivas" value="Não tenho muito conhecimento, mas gostaria de aprender mais"> Não tenho muito conhecimento, mas gostaria de aprender mais</label><br>
+		<label><input type="radio" name="conhecimento-preventivas" value="Não tenho conhecimento sobre o assunto"> Não tenho conhecimento sobre o assunto</label><br>
+	
+		<p>Você já participou de alguma ação de prevenção em sua comunidade?</p>
+		<label><input type="radio" name="participou-acao-prevencao" value="Sim, já participei de treinamentos e simulados"> Sim, já participei de treinamentos e simulados</label><br>
+		<label><input type="radio" name="participou-acao-prevencao" value="Sim, já participei de projetos de conscientização"> Sim, já participei de projetos de conscientização</label><br>
+		<label><input type="radio" name="participou-acao-prevencao" value="Não, nunca participei de nenhuma ação de prevenção"> Não, nunca participei de nenhuma ação de prevenção</label><br>
+		<label><input type="radio" name="participou-acao-prevencao" value="Não, mas tenho interesse em participar no futuro"> Não, mas tenho interesse em participar no futuro</label><br>
+	
+		<p>Quais tipos de desastres naturais são mais comuns na sua região?</p>
+		<label><input type="radio" name="desastres-comuns" value="Enchentes"> Enchentes</label><br>
+		<label><input type="radio" name="desastres-comuns" value="Deslizamentos de terra"> Deslizamentos de terra</label><br>
+		<label><input type="radio" name="desastres-comuns" value="Incêndios florestais"> Incêndios florestais</label><br>
+		<label><input type="radio" name="desastres-comuns" value="Outros"> Outros (especifique)</label><br>
+	
+		<p>Você considera a sua região propensa a desastres naturais?</p>
+		<label><input type="radio" name="regiao-propensa" value="Sim, considero minha região de alto risco"> Sim, considero minha região de alto risco</label><br>
+		<label><input type="radio" name="regiao-propensa" value="Sim, considero minha região de médio risco"> Sim, considero minha região de médio risco</label><br>
+		<label><input type="radio" name="regiao-propensa" value="Sim, considero minha região de baixo risco"> Sim, considero minha região de baixo risco</label><br>
+		<label><input type="radio" name="regiao-propensa" value="Não considero minha região propensa a desastres naturais"> Não considero minha região propensa a desastres naturais</label><br>
+	
+		<p>Você está disposto a colaborar com as autoridades fornecendo informações sobre áreas de risco em sua região?</p>
+		<label><input type="radio" name="colaborar-informacoes" value="Sim, estou disposto a colaborar"> Sim, estou disposto a colaborar</label><br>
+		<label><input type="radio" name="colaborar-informacoes" value="Talvez, dependendo da forma como as informações serão utilizadas"> Talvez, dependendo da forma como as informações serão utilizadas</label><br>
+		<label><input type="radio" name="colaborar-informacoes" value="Não, não tenho interesse em colaborar"> Não, não tenho interesse em colaborar</label><br>
+		<label><input type="radio" name="colaborar-informacoes" value="Não, por questões de privacidade ou segurança"> Não, por questões de privacidade ou segurança</label><br>
+	
+		<p> Você gostaria de receber informações e dicas sobre medidas preventivas e cuidados em caso de desastres naturais?</p>
+		<label><input type="radio" name="receber-informacoes" value="Sim, gostaria de receber essas informações regularmente"> Sim, gostaria de receber essas informações regularmente</label><br>
+		<label><input type="radio" name="receber-informacoes" value="Sim, gostaria de receber essas informações ocasionalmente"> Sim, gostaria de receber essas informações ocasionalmente</label><br>
+		<label><input type="radio" name="receber-informacoes" value="Não, não tenho interesse em receber essas informações"> Não, não tenho interesse em receber essas informações</label><br>
+		<label><input type="radio" name="receber-informacoes" value="Não, já possuo conhecimento suficiente sobre o assunto"> Não, já possuo conhecimento suficiente sobre o assunto</label><br>
+	
+		<br>
 		
 		<input type="submit" value="Cadastrar" onclick="exibirModal(event)">
 	</form>
