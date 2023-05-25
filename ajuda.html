@@ -143,26 +143,75 @@
   
 		  </div>
 		</nav>
+        <style>
+            p{
+                color: black;
+            }
+        </style>
 	  </header><!--/fim Cabecalho -->
       <br><br><br>
 	<h1>Formulário de Cadastro <br> para Empresas</h1>
 	<form id="cadastro-form" action="">
-		<label for="nome">Nome:</label>
-		<input type="text" id="nome" name="nome" placeholder="Nome" class="required" required>
-        <label for="nome">Sobrenome:</label>
-		<input type="text" id="nome" name="nome" placeholder="Sobrenome" class="required" required>
-		
-		<label for="email">Email:</label>
-		<input type="email" id="email" name="email" placeholder="Digite um e-mail válido" required>
-        <label for="email">Repetir Email:</label>
-		<input type="email" id="email" name="email" placeholder="Digite o e-mail novamente" required >
-        <label for="email">Crie uma nova senha:</label>
-		<input type="email" id="email" name="email" placeholder="Digite uma senha" required>
-        <label for="email">Repetir senha:</label>
-		<input type="email" id="email" name="email" placeholder="Digite a senha novamente" required >
-		
-		<label for="telefone">Telefone:</label>
-		<input type="text" id="telefone" name="telefone" placeholder="Telefone">
+        <p>Qual é o nome da sua empresa?</p>
+        <input type="text" name="nome-empresa"><br>
+    
+        <p>Em qual setor sua empresa atua?</p>
+        <label><input type="radio" name="setor-empresa" value="Indústria"> Indústria</label><br>
+        <label><input type="radio" name="setor-empresa" value="Comércio"> Comércio</label><br>
+        <label><input type="radio" name="setor-empresa" value="Serviços"> Serviços</label><br>
+        <label><input type="radio" name="setor-empresa" value="Outro"> Outro (especifique)</label>
+        <input type="text" name="outro-setor"><br>
+    
+        <p> Sua empresa está ciente das áreas de risco em sua região?</p>
+        <label><input type="radio" name="empresa-consciente" value="Sim, estamos cientes e bem informados sobre as áreas de risco"> Sim, estamos cientes e bem informados sobre as áreas de risco</label><br>
+        <label><input type="radio" name="empresa-consciente" value="Sim, temos algum conhecimento, mas gostaríamos de mais informações"> Sim, temos algum conhecimento, mas gostaríamos de mais informações</label><br>
+        <label><input type="radio" name="empresa-consciente" value="Não temos conhecimento suficiente sobre as áreas de risco"> Não temos conhecimento suficiente sobre as áreas de risco</label><br>
+        <label><input type="radio" name="empresa-consciente" value="Não sabemos se há áreas de risco em nossa região"> Não sabemos se há áreas de risco em nossa região</label><br>
+    
+        <p> Sua empresa está disposta a ajudar as pessoas que vivem em áreas de risco?</p>
+        <label><input type="radio" name="empresa-ajuda" value="Sim, estamos totalmente comprometidos em ajudar as pessoas nessas áreas"> Sim, estamos totalmente comprometidos em ajudar as pessoas nessas áreas</label><br>
+        <label><input type="radio" name="empresa-ajuda" value="Sim, estamos dispostos a ajudar, mas precisamos de mais informações sobre como contribuir"> Sim, estamos dispostos a ajudar, mas precisamos de mais informações sobre como contribuir</label><br>
+        <label><input type="radio" name="empresa-ajuda" value="Talvez, dependendo das necessidades específicas das pessoas e da viabilidade para a empresa"> Talvez, dependendo das necessidades específicas das pessoas e da viabilidade para a empresa</label><br>
+        <label><input type="radio" name="empresa-ajuda" value="Não, não estamos interessados em ajudar nesse aspecto"> Não, não estamos interessados em ajudar nesse aspecto</label><br>
+    
+        <p>Em quais áreas sua empresa está disposta a oferecer ajuda às pessoas em áreas de risco? (Marque todas as opções aplicáveis)</p>
+        <label><input type="checkbox" name="ajuda-empresa[]" value="Doações financeiras para assistência e reconstrução"> Doações financeiras para assistência e reconstrução</label><br>
+        <label><input type="checkbox" name="ajuda-empresa[]" value="Fornecimento de recursos materiais essenciais (alimentos, água, abrigos temporários, etc.)"> Fornecimento de recursos materiais essenciais (alimentos, água, abrigos temporários, etc.)</label><br>
+        <label><input type="checkbox" name="ajuda-empresa[]" value="Voluntariado de funcionários para ajudar nas ações de socorro e assistência"> Voluntariado de funcionários para ajudar nas ações de socorro e assistência</label><br>
+        <label><input type="checkbox" name="ajuda-empresa[]" value="Oferecimento de serviços gratuitos ou com descontos para as pessoas afetadas"> Oferecimento de serviços gratuitos ou com descontos para as pessoas afetadas</label><br>
+        <label><input type="checkbox" name="ajuda-empresa[]" value="Outro">Outro (especifique)</label>
+        <input type="text" name="outro-ajuda"><br>
+    
+        <p>Sua empresa já possui programas de responsabilidade social ou ações voltadas para o apoio a comunidades em situações de risco?</p>
+        <label><input type="radio" name="empresa-programas" value="Sim, já possuímos programas estabelecidos nessa área"> Sim, já possuímos programas estabelecidos nessa área</label><br>
+        <label><input type="radio" name="empresa-programas" value="Não, mas estamos interessados em desenvolver programas voltados para áreas de risco"> Não, mas estamos interessados em desenvolver programas voltados para áreas de risco</label><br>
+        <label><input type="radio" name="empresa-programas" value="Não, não temos interesse em programas desse tipo"> Não, não temos interesse em programas desse tipo</label><br>
+    
+        <p>Sua empresa já participou de alguma parceria com organizações governamentais ou não governamentais para ajudar pessoas em áreas de risco?</p>
+        <label><input type="radio" name="empresa-parcerias" value="Sim, já participamos de parcerias com esse objetivo"> Sim, já participamos de parcerias com esse objetivo</label><br>
+        <label><input type="radio" name="empresa-parcerias" value="Não, nunca participamos de parcerias nesse sentido"> Não, nunca participamos de parcerias nesse sentido</label><br>
+        <label><input type="radio" name="empresa-parcerias" value="Não, mas estamos abertos a oportunidades de parceria"> Não, mas estamos abertos a oportunidades de parceria</label><br>
+    
+        <p>Sua empresa possui recursos ou habilidades específicas que podem ser úteis para ajudar as pessoas em áreas de risco? (Marque todas as opções aplicáveis)</p>
+        <label><input type="checkbox" name="recursos-empresa[]" value="Expertise técnica em áreas relevantes (engenharia, construção, logística, etc.)"> Expertise técnica em áreas relevantes (engenharia, construção, logística, etc.)</label><br>
+        <label><input type="checkbox" name="recursos-empresa[]" value="Recursos financeiros para investir em projetos de prevenção e assistência"> Recursos financeiros para investir em projetos de prevenção e assistência</label><br>
+        <label><input type="checkbox" name="recursos-empresa[]" value="Recursos humanos disponíveis para o trabalho voluntário"> Recursos humanos disponíveis para o trabalho voluntário</label><br>
+        <label><input type="checkbox" name="recursos-empresa[]" value="Redes de distribuição ou capacidade logística para a entrega de suprimentos"> Redes de distribuição ou capacidade logística para a entrega de suprimentos</label><br>
+        <label><input type="checkbox" name="recursos-empresa[]" value="Outro">Outro (especifique)</label>
+        <input type="text" name="outro-recurso"><br>
+    
+        <p>Sua empresa está disposta a estabelecer parcerias com organizações locais ou autoridades governamentais para ajudar pessoas em áreas de risco?</p>
+        <label><input type="radio" name="empresa-parcerias2" value="Sim, estamos dispostos a estabelecer parcerias estratégicas"> Sim, estamos dispostos a estabelecer parcerias estratégicas</label><br>
+        <label><input type="radio" name="empresa-parcerias2" value="Talvez, dependendo da natureza e dos benefícios da parceria"> Talvez, dependendo da natureza e dos benefícios da parceria</label><br>
+        <label><input type="radio" name="empresa-parcerias2" value="Não, não estamos interessados em estabelecer parcerias desse tipo"> Não, não estamos interessados em estabelecer parcerias desse tipo</label><br>
+    
+        <p>Sua empresa está disposta a investir recursos financeiros ou dedicar tempo e esforços para desenvolver soluções inovadoras que possam ajudar pessoas em áreas de risco?</p>
+        <label><input type="radio" name="empresa-investir" value="Sim, estamos dispostos a investir significativamente"> Sim, estamos dispostos a investir significativamente</label><br>
+        <label><input type="radio" name="empresa-investir" value="Sim, estamos dispostos a investir, desde que seja viável financeiramente"> Sim, estamos dispostos a investir, desde que seja viável financeiramente</label><br>
+        <label><input type="radio" name="empresa-investir" value="Talvez, dependendo dos benefícios e retorno do investimento"> Talvez, dependendo dos benefícios e retorno do investimento</label><br>
+        <label><input type="radio" name="empresa-investir" value="Não, não estamos dispostos a investir nesse aspecto"> Não, não estamos dispostos a investir nesse aspecto</label><br>
+    
+        <br>
 		
 		<input type="submit" value="Cadastrar" onclick="exibirModal(event)">
 	</form>
@@ -174,8 +223,7 @@
                 <span aria-hidden="true">Fechar</span>
             </button>
         </div>
-    </div>   
-      
+    </div>         
       <script>
         function exibirModal(event) {
           event.preventDefault();  
