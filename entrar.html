@@ -22,52 +22,45 @@
     <title>Casa para todos </title>
     <link rel="icon" href="imagens/favicon.png">
     <style>    
-        .footer h4 {
-          color: #000;
-        }
-      
-        .footer a {
-          color: #000;
-        }
-        .login-page {
+        body {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #fff;
+            background-color: #f8f9fa;
+            }
             
-        }
-
-        .login-form {
-        
-        padding: 20px;
-        background-color: #fff;
-        border-radius: 5px;
-        text-align: center;
-        }
-
-        .login-form h2 {
-        color: #fff;
-        }
-
-        .login-form input[type="email"],
-        .login-form input[type="password"] {
-        width: 80%;
-        padding: 10px;
-        margin-bottom: 20px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        }
-
-        .login-form button {
-        width: 100%;
-        padding: 10px;
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        }
+            .login-form {
+            max-width: 600px;
+            max-height: 800px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            text-align: center;
+            }
+            
+            .login-form h2 {
+            color: #000;
+            }
+            
+            .login-form input[type="email"],
+            .login-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            }
+            
+            .login-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            }
 
     </style>
 </head>
@@ -109,9 +102,11 @@
         </nav>
     </header><!--/fim Cabecalho -->
 
-    <div class="container mt-6 login-page">
+    <div class="container mt-6 login-form   ">
         <div class="row justify-content-center">
+            
           <div class="">
+            <br><br>
             <h2 class="text-center mb-4">Tela de Login</h2>
             <form>
               <div class="form-group">
@@ -123,6 +118,7 @@
                 <input type="password" class="form-control" id="senha" placeholder="Digite sua senha">
               </div>
               <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+              <br><br>
             </form>
           </div>
         </div>
